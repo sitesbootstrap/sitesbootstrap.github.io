@@ -46,7 +46,7 @@
     background-clip: text;
     background-size: 500% 100%;
     -webkit-background-clip: text;
-    animation:degrade-animado 5s infinite alternate paused;
+    animation:degrade-animado 1s infinite alternate paused;
     top:-310px;
     left:750px;
   }
