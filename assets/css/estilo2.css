@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+.box-degrade{
+    width: 100%;
+    padding: 474.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s alternate infinite;
+}
+
+@keyframes degrade-animado{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+
+}
+#genio{
+    position: absolute;
+    display: flex;
+    color: transparent;
+    text-decoration: none;
+    font-size: 40px;
+    background: linear-gradient(to right, black, #262626, #404040, #8C8C8C, #BFBFBF);
+    background-clip: text;
+    background-size: 500% 100%;
+    -webkit-background-clip: text;
+    animation:degrade-animado 1s infinite alternate paused;
+}
+#genio:hover{
+    animation-play-state: running;
+}
+a:hover{
+    animation-play-state: running;
+  }
+
+  @keyframes degrade-animado2 {
+    0% {
+      background-position-x:0%;
+    }
+    100% {
+      background-position-x: 100%;
+    }
+}
